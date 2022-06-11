@@ -13,27 +13,6 @@ Here's the Maven settings.xml used to deploy the demo library jar to the S3 buck
 			<password>*** REDACTED AWS_SECRET_ACCESS_KEY ***</password>
 		</server>
 	</servers>
-	<profiles>
-		<profile>
-			<id>default</id>
-			<repositories>
-				<repository>
-					<id>repo.jeremywall.dev</id>
-					<name>S3 Release Repository</name>
-					<url>s3://repo.jeremywall.dev/release</url>
-					<releases>
-						<enabled>true</enabled>
-					</releases>
-					<snapshots>
-						<enabled>false</enabled>
-					</snapshots>
-				</repository>
-			</repositories>
-		</profile>
-	</profiles>
-	<activeProfiles>
-		<activeProfile>default</activeProfile>
-	</activeProfiles>
 </settings>
 
 ```
