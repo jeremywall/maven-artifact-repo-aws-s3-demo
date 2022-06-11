@@ -18,3 +18,5 @@ Here's the Maven settings.xml used to deploy the demo library jar to the S3 buck
 	</servers>
 </settings>
 ```
+
+The `mvn deploy -X` command was run for both `exists-maven-plugin:0.6.0` and `exists-maven-plugin:0.7.0`. The section of the debug logs for the `exists-maven-plugin` are in the `logs` directory here.
