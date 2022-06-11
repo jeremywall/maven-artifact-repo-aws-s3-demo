@@ -1,0 +1,134 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>dev.jeremywall.mavens3demo</groupId>
+    <artifactId>demo-library</artifactId>
+    <version>1</version>
+    <packaging>jar</packaging>
+
+    <name>demo-library</name>
+
+    <description>Maven Artifact Repo AWS S3 Demo</description>
+
+    <url>https://github.com/jeremywall/maven-artifact-repo-aws-s3-demo</url>
+
+    <scm>
+        <connection>scm:git:https://github.com/jeremywall/maven-artifact-repo-aws-s3-demo.git</connection>
+        <developerConnection>scm:git:git@github.com:jeremywall/maven-artifact-repo-aws-s3-demo.git</developerConnection>
+        <url>https://github.com/jeremywall/maven-artifact-repo-aws-s3-demo</url>
+    </scm>
+
+    <properties>
+        <!-- since java 5 the 1.x prefix is not required -->
+        <java.version>8</java.version>
+
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.honton.chas</groupId>
+                <artifactId>exists-maven-plugin</artifactId>
+                <version>0.7.0</version>
+                <executions>
+                    <execution>
+                        <id>validate-check</id>
+                        <phase>validate</phase>
+                        <goals>
+                            <goal>remote</goal>
+                        </goals>
+                        <configuration>
+                            <requireGoal>deploy</requireGoal>
+                            <failIfExists>true</failIfExists>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>verify-check</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>remote</goal>
+                        </goals>
+                        <configuration>
+                            <requireGoal>deploy</requireGoal>
+                            <failIfExists>true</failIfExists>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version>
+                <configuration>
+                    <encoding>UTF-8</encoding>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.2</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                            <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>3.4.0</version>
+                <configuration>
+                    <sourcepath>${basedir}/src/main/java</sourcepath>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.2.1</version>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+        <extensions>
+            <extension>
+                <groupId>org.springframework.build</groupId>
+                <artifactId>aws-maven</artifactId>
+                <version>5.0.0.RELEASE</version>
+            </extension>
+        </extensions>
+    </build>
+
+    <distributionManagement>
+        <repository>
+            <id>jeremywall-dev-maven-s3-release-repo</id>
+            <name>AWS Release Repository</name>
+            <url>s3://repo.jeremywall.dev/release</url>
+        </repository>
+    </distributionManagement>
+</project>
