@@ -1,0 +1,550 @@
+[INFO] --- exists-maven-plugin:0.7.0:remote (validate-check) @ demo-library ---
+[DEBUG] Dependency collection stats {ConflictMarker.analyzeTime=87500, ConflictMarker.markTime=60400, ConflictMarker.nodeCount=4, ConflictIdSorter.graphTime=34400, ConflictIdSorter.topsortTime=20100, ConflictIdSorter.conflictIdCount=4, ConflictIdSorter.conflictIdCycleCount=0, ConflictResolver.totalTime=356300, ConflictResolver.conflictItemCount=4, DefaultDependencyCollector.collectTime=40124900, DefaultDependencyCollector.transformTime=588500}
+[DEBUG] org.honton.chas:exists-maven-plugin:jar:0.7.0
+[DEBUG]    org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4:compile
+[DEBUG]       org.codehaus.plexus:plexus-utils:jar:3.4.1:compile (version managed from default)
+[DEBUG]       org.sonatype.plexus:plexus-cipher:jar:1.4:compile
+[DEBUG] Created new class realm plugin>org.honton.chas:exists-maven-plugin:0.7.0
+[DEBUG] Importing foreign packages into class realm plugin>org.honton.chas:exists-maven-plugin:0.7.0
+[DEBUG]   Imported:  < project>dev.jeremywall.mavens3demo:demo-library:1
+[DEBUG] Populating class realm plugin>org.honton.chas:exists-maven-plugin:0.7.0
+[DEBUG]   Included: org.honton.chas:exists-maven-plugin:jar:0.7.0
+[DEBUG]   Included: org.sonatype.plexus:plexus-sec-dispatcher:jar:1.4
+[DEBUG]   Included: org.codehaus.plexus:plexus-utils:jar:3.4.1
+[DEBUG]   Included: org.sonatype.plexus:plexus-cipher:jar:1.4
+[DEBUG] Configuring mojo org.honton.chas:exists-maven-plugin:0.7.0:remote from plugin realm ClassRealm[plugin>org.honton.chas:exists-maven-plugin:0.7.0, parent: sun.misc.Launcher$AppClassLoader@70dea4e]
+[DEBUG] Configuring mojo 'org.honton.chas:exists-maven-plugin:0.7.0:remote' with basic configurator -->
+[DEBUG]   (f) artifact = demo-library-1.jar
+[DEBUG]   (f) cmpChecksum = false
+[DEBUG]   (f) failIfExists = true
+[DEBUG]   (f) failIfNotExists = false
+[DEBUG]   (f) failIfNotMatch = true
+[DEBUG]   (f) mavenProject = MavenProject: dev.jeremywall.mavens3demo:demo-library:1 @ C:\Work\Personal\Projects\maven-artifact-repo-aws-s3-demo\pom.xml
+[DEBUG]   (f) project = dev.jeremywall.mavens3demo:demo-library:jar:1
+[DEBUG]   (f) property = maven.deploy.skip
+[DEBUG]   (f) repository = s3://repo.jeremywall.dev/release
+[DEBUG]   (f) requireGoal = deploy
+[DEBUG]   (f) serverId = repo.jeremywall.dev
+[DEBUG]   (f) session = org.apache.maven.execution.MavenSession@47ad69f7
+[DEBUG]   (f) settings = org.apache.maven.execution.SettingsAdapter@5e5073ab
+[DEBUG]   (f) skip = false
+[DEBUG]   (f) skipIfSnapshot = true
+[DEBUG]   (f) userProperty = false
+[DEBUG] -- end configuration --
+[INFO] Checking for artifact at s3://repo.jeremywall.dev/release/dev/jeremywall/mavens3demo/demo-library/1/demo-library-1.jar
+[DEBUG] Loading mime types from file in the classpath: mime.types
+[DEBUG] Setting mime type for extension 'class' to 'application/java'
+[DEBUG] Setting mime type for extension 'jar' to 'application/java-archive'
+[DEBUG] Setting mime type for extension 'hqx' to 'application/mac-binhex40'
+[DEBUG] Setting mime type for extension 'hqx' to 'application/mac-binhex40'
+[DEBUG] Setting mime type for extension 'mathml' to 'application/mathml+xml'
+[DEBUG] Setting mime type for extension 'doc' to 'application/msword'
+[DEBUG] Setting mime type for extension 'bin' to 'application/octet-stream'
+[DEBUG] Setting mime type for extension 'exe' to 'application/octet-stream'
+[DEBUG] Setting mime type for extension 'oda' to 'application/oda'
+[DEBUG] Setting mime type for extension 'ogg' to 'application/ogg'
+[DEBUG] Setting mime type for extension 'pdf' to 'application/pdf'
+[DEBUG] Setting mime type for extension 'ai' to 'application/postscript'
+[DEBUG] Setting mime type for extension 'eps' to 'application/postscript'
+[DEBUG] Setting mime type for extension 'ps' to 'application/postscript'
+[DEBUG] Setting mime type for extension 'ppt' to 'application/powerpoint'
+[DEBUG] Setting mime type for extension 'rdf' to 'application/rdf+xml'
+[DEBUG] Setting mime type for extension 'rtf' to 'application/rtf'
+[DEBUG] Setting mime type for extension 'xul' to 'application/vnd.mozilla.xul+xml'
+[DEBUG] Setting mime type for extension 'xls' to 'application/vnd.ms-excel'
+[DEBUG] Setting mime type for extension 'ppt' to 'application/vnd.ms-powerpoint'
+[DEBUG] Setting mime type for extension 'doc' to 'application/vnd.ms-word'
+[DEBUG] Setting mime type for extension 'odc' to 'application/vnd.oasis.opendocument.chart'
+[DEBUG] Setting mime type for extension 'odb' to 'application/vnd.oasis.opendocument.database'
+[DEBUG] Setting mime type for extension 'odf' to 'application/vnd.oasis.opendocument.formula'
+[DEBUG] Setting mime type for extension 'odg' to 'application/vnd.oasis.opendocument.graphics'
+[DEBUG] Setting mime type for extension 'otg' to 'application/vnd.oasis.opendocument.graphics-template'
+[DEBUG] Setting mime type for extension 'odi' to 'application/vnd.oasis.opendocument.image'
+[DEBUG] Setting mime type for extension 'odp' to 'application/vnd.oasis.opendocument.presentation'
+[DEBUG] Setting mime type for extension 'otp' to 'application/vnd.oasis.opendocument.presentation-template'
+[DEBUG] Setting mime type for extension 'ods' to 'application/vnd.oasis.opendocument.spreadsheet'
+[DEBUG] Setting mime type for extension 'ots' to 'application/vnd.oasis.opendocument.spreadsheet-template'
+[DEBUG] Setting mime type for extension 'odt' to 'application/vnd.oasis.opendocument.text'
+[DEBUG] Setting mime type for extension 'odm' to 'application/vnd.oasis.opendocument.text-master'
+[DEBUG] Setting mime type for extension 'ott' to 'application/vnd.oasis.opendocument.text-template'
+[DEBUG] Setting mime type for extension 'oth' to 'application/vnd.oasis.opendocument.text-web'
+[DEBUG] Setting mime type for extension 'rm' to 'application/vnd.rn-realmedia'
+[DEBUG] Setting mime type for extension 'wmlc' to 'application/vnd.wap.wmlc'
+[DEBUG] Setting mime type for extension 'wmlscriptc' to 'application/vnd.wap.wmlscriptc'
+[DEBUG] Setting mime type for extension 'vxml' to 'application/voicexml+xml'
+[DEBUG] Setting mime type for extension 'wspolicy' to 'application/wspolicy+xml'
+[DEBUG] Setting mime type for extension 'aim' to 'application/x-aim'
+[DEBUG] Setting mime type for extension 'bcpio' to 'application/x-bcpio'
+[DEBUG] Setting mime type for extension 'cdf' to 'application/x-cdf'
+[DEBUG] Setting mime type for extension 'z' to 'application/x-compress'
+[DEBUG] Setting mime type for extension 'z' to 'application/x-compress'
+[DEBUG] Setting mime type for extension 'cpio' to 'application/x-cpio'
+[DEBUG] Setting mime type for extension 'csh' to 'application/x-csh'
+[DEBUG] Setting mime type for extension 'dvi' to 'application/x-dvi'
+[DEBUG] Setting mime type for extension 'gtar' to 'application/x-gtar'
+[DEBUG] Setting mime type for extension 'gz' to 'application/x-gzip'
+[DEBUG] Setting mime type for extension 'hdf' to 'application/x-hdf'
+[DEBUG] Setting mime type for extension 'jnlp' to 'application/x-java-jnlp-file'
+[DEBUG] Setting mime type for extension 'latex' to 'application/x-latex'
+[DEBUG] Setting mime type for extension 'mif' to 'application/x-mif'
+[DEBUG] Setting mime type for extension 'nc' to 'application/x-netcdf'
+[DEBUG] Setting mime type for extension 'sh' to 'application/x-sh'
+[DEBUG] Setting mime type for extension 'shar' to 'application/x-shar'
+[DEBUG] Setting mime type for extension 'swf' to 'application/x-shockwave-flash'
+[DEBUG] Setting mime type for extension 'sit' to 'application/x-stuffit'
+[DEBUG] Setting mime type for extension 'sv4cpio' to 'application/x-sv4cpio'
+[DEBUG] Setting mime type for extension 'sv4crc' to 'application/x-sv4crc'
+[DEBUG] Setting mime type for extension 'tar' to 'application/x-tar'
+[DEBUG] Setting mime type for extension 'tcl' to 'application/x-tcl'
+[DEBUG] Setting mime type for extension 'tex' to 'application/x-tex'
+[DEBUG] Setting mime type for extension 'texi' to 'application/x-texinfo'
+[DEBUG] Setting mime type for extension 'texinfo' to 'application/x-texinfo'
+[DEBUG] Setting mime type for extension 'roff' to 'application/x-troff'
+[DEBUG] Setting mime type for extension 't' to 'application/x-troff'
+[DEBUG] Setting mime type for extension 'tr' to 'application/x-troff'
+[DEBUG] Setting mime type for extension 'man' to 'application/x-troff-man'
+[DEBUG] Setting mime type for extension 'me' to 'application/x-troff-me'
+[DEBUG] Setting mime type for extension 'ustar' to 'application/x-ustar'
+[DEBUG] Setting mime type for extension 'vsd' to 'application/x-visio'
+[DEBUG] Setting mime type for extension 'ms' to 'application/x-wais-source'
+[DEBUG] Setting mime type for extension 'src' to 'application/x-wais-source'
+[DEBUG] Setting mime type for extension 'cer' to 'application/x-x509-ca-cert'
+[DEBUG] Setting mime type for extension 'xht' to 'application/xhtml+xml'
+[DEBUG] Setting mime type for extension 'xhtml' to 'application/xhtml+xml'
+[DEBUG] Setting mime type for extension 'xml' to 'application/xml'
+[DEBUG] Setting mime type for extension 'xsl' to 'application/xml'
+[DEBUG] Setting mime type for extension 'dtd' to 'application/xml-dtd'
+[DEBUG] Setting mime type for extension 'xslt' to 'application/xslt+xml'
+[DEBUG] Setting mime type for extension 'zip' to 'application/zip'
+[DEBUG] Setting mime type for extension 'au' to 'audio/basic'
+[DEBUG] Setting mime type for extension 'snd' to 'audio/basic'
+[DEBUG] Setting mime type for extension 'ulw' to 'audio/basic'
+[DEBUG] Setting mime type for extension 'aif' to 'audio/x-aiff'
+[DEBUG] Setting mime type for extension 'aifc' to 'audio/x-aiff'
+[DEBUG] Setting mime type for extension 'aiff' to 'audio/x-aiff'
+[DEBUG] Setting mime type for extension 'kar' to 'audio/x-midi'
+[DEBUG] Setting mime type for extension 'mid' to 'audio/x-midi'
+[DEBUG] Setting mime type for extension 'midi' to 'audio/x-midi'
+[DEBUG] Setting mime type for extension 'smf' to 'audio/x-midi'
+[DEBUG] Setting mime type for extension 'abs' to 'audio/x-mpeg'
+[DEBUG] Setting mime type for extension 'mp1' to 'audio/x-mpeg'
+[DEBUG] Setting mime type for extension 'mp2' to 'audio/x-mpeg'
+[DEBUG] Setting mime type for extension 'mp3' to 'audio/x-mpeg'
+[DEBUG] Setting mime type for extension 'mpa' to 'audio/x-mpeg'
+[DEBUG] Setting mime type for extension 'mpega' to 'audio/x-mpeg'
+[DEBUG] Setting mime type for extension 'm3u' to 'audio/x-mpegurl'
+[DEBUG] Setting mime type for extension 'pls' to 'audio/x-scpls'
+[DEBUG] Setting mime type for extension 'wav' to 'audio/x-wav'
+[DEBUG] Setting mime type for extension 'bmp' to 'image/bmp'
+[DEBUG] Setting mime type for extension 'dib' to 'image/bmp'
+[DEBUG] Setting mime type for extension 'gif' to 'image/gif'
+[DEBUG] Setting mime type for extension 'ief' to 'image/ief'
+[DEBUG] Setting mime type for extension 'jpe' to 'image/jpeg'
+[DEBUG] Setting mime type for extension 'jpeg' to 'image/jpeg'
+[DEBUG] Setting mime type for extension 'jpg' to 'image/jpeg'
+[DEBUG] Setting mime type for extension 'pct' to 'image/pict'
+[DEBUG] Setting mime type for extension 'pic' to 'image/pict'
+[DEBUG] Setting mime type for extension 'pict' to 'image/pict'
+[DEBUG] Setting mime type for extension 'png' to 'image/png'
+[DEBUG] Setting mime type for extension 'svg' to 'image/svg+xml'
+[DEBUG] Setting mime type for extension 'svgz' to 'image/svg+xml'
+[DEBUG] Setting mime type for extension 'tif' to 'image/tiff'
+[DEBUG] Setting mime type for extension 'tiff' to 'image/tiff'
+[DEBUG] Setting mime type for extension 'wbmp' to 'image/vnd.wap.wbmp'
+[DEBUG] Setting mime type for extension 'ras' to 'image/x-cmu-raster'
+[DEBUG] Setting mime type for extension 'art' to 'image/x-jg'
+[DEBUG] Setting mime type for extension 'mac' to 'image/x-macpaint'
+[DEBUG] Setting mime type for extension 'pnt' to 'image/x-macpaint'
+[DEBUG] Setting mime type for extension 'psd' to 'image/x-photoshop'
+[DEBUG] Setting mime type for extension 'pnm' to 'image/x-portable-anymap'
+[DEBUG] Setting mime type for extension 'pbm' to 'image/x-portable-bitmap'
+[DEBUG] Setting mime type for extension 'pgm' to 'image/x-portable-graymap'
+[DEBUG] Setting mime type for extension 'ppm' to 'image/x-portable-pixmap'
+[DEBUG] Setting mime type for extension 'qti' to 'image/x-quicktime'
+[DEBUG] Setting mime type for extension 'qtif' to 'image/x-quicktime'
+[DEBUG] Setting mime type for extension 'rgb' to 'image/x-rgb'
+[DEBUG] Setting mime type for extension 'xbm' to 'image/x-xbitmap'
+[DEBUG] Setting mime type for extension 'xpm' to 'image/x-xpixmap'
+[DEBUG] Setting mime type for extension 'xwd' to 'image/x-xwindowdump'
+[DEBUG] Setting mime type for extension 'css' to 'text/css'
+[DEBUG] Setting mime type for extension 'body' to 'text/html'
+[DEBUG] Setting mime type for extension 'htm' to 'text/html'
+[DEBUG] Setting mime type for extension 'html' to 'text/html'
+[DEBUG] Setting mime type for extension 'js' to 'text/javascript'
+[DEBUG] Setting mime type for extension 'java' to 'text/plain'
+[DEBUG] Setting mime type for extension 'jsf' to 'text/plain'
+[DEBUG] Setting mime type for extension 'jspf' to 'text/plain'
+[DEBUG] Setting mime type for extension 'txt' to 'text/plain'
+[DEBUG] Setting mime type for extension 'pom' to 'text/plain'
+[DEBUG] Setting mime type for extension 'sha1' to 'text/plain'
+[DEBUG] Setting mime type for extension 'md5' to 'text/plain'
+[DEBUG] Setting mime type for extension 'xml' to 'text/plain'
+[DEBUG] Setting mime type for extension 'asc' to 'text/plain'
+[DEBUG] Setting mime type for extension 'rtx' to 'text/richtext'
+[DEBUG] Setting mime type for extension 'tsv' to 'text/tab-separated-values'
+[DEBUG] Setting mime type for extension 'jad' to 'text/vnd.sun.j2me.app-descriptor'
+[DEBUG] Setting mime type for extension 'wml' to 'text/vnd.wap.wml'
+[DEBUG] Setting mime type for extension 'wmls' to 'text/vnd.wap.wmlscript'
+[DEBUG] Setting mime type for extension 'htc' to 'text/x-component'
+[DEBUG] Setting mime type for extension 'etx' to 'text/x-setext'
+[DEBUG] Setting mime type for extension 'mp4' to 'video/mp4'
+[DEBUG] Setting mime type for extension 'mpe' to 'video/mpeg'
+[DEBUG] Setting mime type for extension 'mpeg' to 'video/mpeg'
+[DEBUG] Setting mime type for extension 'mpg' to 'video/mpeg'
+[DEBUG] Setting mime type for extension 'mpv2' to 'video/mpeg2'
+[DEBUG] Setting mime type for extension 'mov' to 'video/quicktime'
+[DEBUG] Setting mime type for extension 'qt' to 'video/quicktime'
+[DEBUG] Setting mime type for extension 'dv' to 'video/x-dv'
+[DEBUG] Setting mime type for extension 'asf' to 'video/x-ms-asf'
+[DEBUG] Setting mime type for extension 'asx' to 'video/x-ms-asf'
+[DEBUG] Setting mime type for extension 'wmv' to 'video/x-ms-wmv'
+[DEBUG] Setting mime type for extension 'avi' to 'video/x-msvideo'
+[DEBUG] Setting mime type for extension 'avx' to 'video/x-rad-screenplay'
+[DEBUG] Setting mime type for extension 'movie' to 'video/x-sgi-movie'
+[DEBUG] Setting mime type for extension 'wrl' to 'x-world/x-vrml'
+[DEBUG] no server configuration
+[DEBUG] Connecting to s3://repo.jeremywall.dev/release
+[DEBUG] Unable to load credentials from SystemPropertiesCredentialsProvider: Unable to load AWS credentials from Java system properties (aws.accessKeyId and aws.secretKey)
+[DEBUG] Unable to load credentials from EnvironmentVariableCredentialsProvider: Unable to load AWS credentials from environment variables (AWS_ACCESS_KEY_ID (or AWS_ACCESS_KEY) and AWS_SECRET_KEY (or AWS_SECRET_ACCESS_KEY))
+[DEBUG] Unable to load credentials from WebIdentityTokenCredentialsProvider: You must specify a value for roleArn and roleSessionName
+[DEBUG] Loading credentials from org.kuali.maven.wagon.auth.AuthenticationInfoCredentialsProvider@987455b
+[DEBUG] Internal logging successfully configured to commons logger: true
+[DEBUG] Admin mbean registered under com.amazonaws.management:type=AwsSdkMetrics
+[DEBUG] Closing connections idle longer than 60000 MILLISECONDS
+[DEBUG] Unable to load configuration from com.amazonaws.monitoring.EnvironmentVariableCsmConfigurationProvider@22752544: Unable to load Client Side Monitoring configurations from environment variables!
+[DEBUG] Unable to load configuration from com.amazonaws.monitoring.SystemPropertyCsmConfigurationProvider@21ba2445: Unable to load Client Side Monitoring configurations from system properties variables!
+[DEBUG] Unable to load configuration from com.amazonaws.monitoring.ProfileCsmConfigurationProvider@69d23296: The 'default' profile does not define all the required properties!
+[DEBUG] Looking for bucket: repo.jeremywall.dev
+[DEBUG] Bucket region cache doesn't have an entry for repo.jeremywall.dev. Trying to get bucket region from Amazon S3.
+[DEBUG] Sending Request: HEAD https://repo.jeremywall.dev.s3.amazonaws.com / Headers: (amz-sdk-invocation-id: fadc29d9-22f4-0bb0-a16e-572170dc97b2, Content-Type: application/octet-stream, User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc., )
+[DEBUG] AWS4 Canonical Request: '"HEAD
+/
+
+amz-sdk-invocation-id:fadc29d9-22f4-0bb0-a16e-572170dc97b2
+amz-sdk-request:attempt=1;max=4
+amz-sdk-retry:0/0/500
+content-type:application/octet-stream
+host:repo.jeremywall.dev.s3.amazonaws.com
+user-agent:aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220611T062814Z
+
+amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+[DEBUG] AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20220611T062814Z
+20220611/us-east-1/s3/aws4_request
+fb1308571ebe3c322049e9310932de427e5dae2f101c2c6ebcd220572b0df03f"
+[DEBUG] Generating a new signing key as the signing key not available in the cache for the date 1654905600000
+[DEBUG] CookieSpec selected: default
+[DEBUG] Auth cache not set in the context
+[DEBUG] Connection request: [route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 0; route allocated: 0 of 50; total allocated: 0 of 50]
+[DEBUG] Connection leased: [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] Opening connection {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443
+[DEBUG] Connecting to repo.jeremywall.dev.s3.amazonaws.com/54.231.132.81:443
+[DEBUG] connecting to repo.jeremywall.dev.s3.amazonaws.com/54.231.132.81:443
+[DEBUG] Connecting socket to repo.jeremywall.dev.s3.amazonaws.com/54.231.132.81:443 with timeout 10000
+[DEBUG] Enabled protocols: [TLSv1.2, TLSv1.1, TLSv1]
+[DEBUG] Enabled cipher suites:[TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_RSA_WITH_AES_256_GCM_SHA384, TLS_DHE_DSS_WITH_AES_256_GCM_SHA384, TLS_DHE_RSA_WITH_AES_128_GCM_SHA256, TLS_DHE_DSS_WITH_AES_128_GCM_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_RSA_WITH_AES_256_CBC_SHA256, TLS_DHE_DSS_WITH_AES_256_CBC_SHA256, TLS_DHE_RSA_WITH_AES_128_CBC_SHA256, TLS_DHE_DSS_WITH_AES_128_CBC_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_RSA_WITH_AES_256_GCM_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_RSA_WITH_AES_128_GCM_SHA256, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA384, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA256, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA256, TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA, TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_RSA_WITH_AES_256_CBC_SHA, TLS_DHE_DSS_WITH_AES_256_CBC_SHA, TLS_DHE_RSA_WITH_AES_128_CBC_SHA, TLS_DHE_DSS_WITH_AES_128_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_256_CBC_SHA, TLS_ECDH_RSA_WITH_AES_256_CBC_SHA, TLS_ECDH_ECDSA_WITH_AES_128_CBC_SHA, TLS_ECDH_RSA_WITH_AES_128_CBC_SHA, TLS_RSA_WITH_AES_256_GCM_SHA384, TLS_RSA_WITH_AES_128_GCM_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA256, TLS_RSA_WITH_AES_128_CBC_SHA256, TLS_RSA_WITH_AES_256_CBC_SHA, TLS_RSA_WITH_AES_128_CBC_SHA, TLS_EMPTY_RENEGOTIATION_INFO_SCSV]
+[DEBUG] socket.getSupportedProtocols(): [TLSv1.3, TLSv1.2, TLSv1.1, TLSv1, SSLv3, SSLv2Hello], socket.getEnabledProtocols(): [TLSv1.2, TLSv1.1, TLSv1]
+[DEBUG] TLS protocol enabled for SSL handshake: [TLSv1.2, TLSv1.1, TLSv1]
+[DEBUG] Starting handshake
+[DEBUG] Secure session established
+[DEBUG]  negotiated protocol: TLSv1.2
+[DEBUG]  negotiated cipher suite: TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256
+[DEBUG]  peer principal: CN=*.s3.amazonaws.com
+[DEBUG]  peer alternative names: [*.s3.amazonaws.com, s3.amazonaws.com]
+[DEBUG]  issuer principal: CN=Amazon, OU=Server CA 1B, O=Amazon, C=US
+[DEBUG] created: repo.jeremywall.dev.s3.amazonaws.com/54.231.132.81:443
+[DEBUG] Connection established 192.168.68.116:59125<->54.231.132.81:443
+[DEBUG] http-outgoing-0: set socket timeout to 50000
+[DEBUG] Executing request HEAD / HTTP/1.1
+[DEBUG] Proxy auth state: UNCHALLENGED
+[DEBUG] http-outgoing-0 >> HEAD / HTTP/1.1
+[DEBUG] http-outgoing-0 >> Host: repo.jeremywall.dev.s3.amazonaws.com
+[DEBUG] http-outgoing-0 >> amz-sdk-invocation-id: fadc29d9-22f4-0bb0-a16e-572170dc97b2
+[DEBUG] http-outgoing-0 >> amz-sdk-request: attempt=1;max=4
+[DEBUG] http-outgoing-0 >> amz-sdk-retry: 0/0/500
+[DEBUG] http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=***REDACTED AWS CREDENTIAL***/20220611/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=80ae20d37be349498ffb147c9b7f4da4e1dad9d07051eb9dbfb7d6c09ece2a79
+[DEBUG] http-outgoing-0 >> Content-Type: application/octet-stream
+[DEBUG] http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.
+[DEBUG] http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+[DEBUG] http-outgoing-0 >> X-Amz-Date: 20220611T062814Z
+[DEBUG] http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG] http-outgoing-0 >> "HEAD / HTTP/1.1[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Host: repo.jeremywall.dev.s3.amazonaws.com[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-invocation-id: fadc29d9-22f4-0bb0-a16e-572170dc97b2[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-request: attempt=1;max=4[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=***REDACTED AWS CREDENTIAL***/20220611/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=80ae20d37be349498ffb147c9b7f4da4e1dad9d07051eb9dbfb7d6c09ece2a79[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG] http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.[\r][\n]"
+[DEBUG] http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+[DEBUG] http-outgoing-0 >> "X-Amz-Date: 20220611T062814Z[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] http-outgoing-0 >> "[\r][\n]"
+[DEBUG] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-id-2: VhYKmP6pKgPi/L3s0C4v9wB0hs4clVbpdzZnV5gqsGWMns4Z2Pa9e8fZIkzBukDocR1JxV3aLqk=[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-request-id: 65HKZYNBX8EDHZA3[\r][\n]"
+[DEBUG] http-outgoing-0 << "Date: Sat, 11 Jun 2022 06:28:16 GMT[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-bucket-region: us-east-1[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-access-point-alias: false[\r][\n]"
+[DEBUG] http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+[DEBUG] http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+[DEBUG] http-outgoing-0 << "[\r][\n]"
+[DEBUG] http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG] http-outgoing-0 << x-amz-id-2: VhYKmP6pKgPi/L3s0C4v9wB0hs4clVbpdzZnV5gqsGWMns4Z2Pa9e8fZIkzBukDocR1JxV3aLqk=
+[DEBUG] http-outgoing-0 << x-amz-request-id: 65HKZYNBX8EDHZA3
+[DEBUG] http-outgoing-0 << Date: Sat, 11 Jun 2022 06:28:16 GMT
+[DEBUG] http-outgoing-0 << x-amz-bucket-region: us-east-1
+[DEBUG] http-outgoing-0 << x-amz-access-point-alias: false
+[DEBUG] http-outgoing-0 << Content-Type: application/xml
+[DEBUG] http-outgoing-0 << Server: AmazonS3
+[DEBUG] Connection can be kept alive for 60000 MILLISECONDS
+[DEBUG] Connection [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443] can be kept alive for 60.0 seconds
+[DEBUG] http-outgoing-0: set socket timeout to 0
+[DEBUG] Connection released: [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] Reported server date (from 'Date' header): Sat, 11 Jun 2022 06:28:16 GMT
+[DEBUG] Received successful response: 200, AWS Request ID: null
+[DEBUG] x-amzn-RequestId: not available
+[DEBUG] AWS Request ID: not available
+[DEBUG] AWS Extended Request ID: VhYKmP6pKgPi/L3s0C4v9wB0hs4clVbpdzZnV5gqsGWMns4Z2Pa9e8fZIkzBukDocR1JxV3aLqk=
+[DEBUG] Region for repo.jeremywall.dev is us-east-1
+[DEBUG] Sending Request: HEAD https://repo.jeremywall.dev.s3.amazonaws.com / Headers: (amz-sdk-invocation-id: 63f327a2-2888-053c-9474-dd62368dc5eb, Content-Type: application/octet-stream, User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc., )
+[DEBUG] AWS4 Canonical Request: '"HEAD
+/
+
+amz-sdk-invocation-id:63f327a2-2888-053c-9474-dd62368dc5eb
+amz-sdk-request:ttl=20220611T062905Z;attempt=1;max=4
+amz-sdk-retry:0/0/500
+content-type:application/octet-stream
+host:repo.jeremywall.dev.s3.amazonaws.com
+user-agent:aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220611T062815Z
+
+amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+[DEBUG] AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20220611T062815Z
+20220611/us-east-1/s3/aws4_request
+42ce8604b157f0d29044e2e6dcc434775ebac30a9b7b12ed4cf6a1becbc0bae9"
+[DEBUG] CookieSpec selected: default
+[DEBUG] Auth cache not set in the context
+[DEBUG] Connection request: [route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] Connection leased: [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] http-outgoing-0: set socket timeout to 50000
+[DEBUG] http-outgoing-0: set socket timeout to 50000
+[DEBUG] Executing request HEAD / HTTP/1.1
+[DEBUG] Proxy auth state: UNCHALLENGED
+[DEBUG] http-outgoing-0 >> HEAD / HTTP/1.1
+[DEBUG] http-outgoing-0 >> Host: repo.jeremywall.dev.s3.amazonaws.com
+[DEBUG] http-outgoing-0 >> amz-sdk-invocation-id: 63f327a2-2888-053c-9474-dd62368dc5eb
+[DEBUG] http-outgoing-0 >> amz-sdk-request: ttl=20220611T062905Z;attempt=1;max=4
+[DEBUG] http-outgoing-0 >> amz-sdk-retry: 0/0/500
+[DEBUG] http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=***REDACTED AWS CREDENTIAL***/20220611/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=799cb70879ea868306d3682eebba547b8368b3bb51494670e978b6ae79b03a72
+[DEBUG] http-outgoing-0 >> Content-Type: application/octet-stream
+[DEBUG] http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.
+[DEBUG] http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+[DEBUG] http-outgoing-0 >> X-Amz-Date: 20220611T062815Z
+[DEBUG] http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG] http-outgoing-0 >> "HEAD / HTTP/1.1[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Host: repo.jeremywall.dev.s3.amazonaws.com[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-invocation-id: 63f327a2-2888-053c-9474-dd62368dc5eb[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-request: ttl=20220611T062905Z;attempt=1;max=4[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=***REDACTED AWS CREDENTIAL***/20220611/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=799cb70879ea868306d3682eebba547b8368b3bb51494670e978b6ae79b03a72[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG] http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.[\r][\n]"
+[DEBUG] http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+[DEBUG] http-outgoing-0 >> "X-Amz-Date: 20220611T062815Z[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] http-outgoing-0 >> "[\r][\n]"
+[DEBUG] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-id-2: 3Cv1L9oULq+3aqOB2rk+zdhv52T8Q3szyC+zeuSoG4rDMcOLUXODZSfsUwllXww/qi/5Npvx/Uw=[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-request-id: 5HHWWB27XEHTMBA9[\r][\n]"
+[DEBUG] http-outgoing-0 << "Date: Sat, 11 Jun 2022 06:28:17 GMT[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-bucket-region: us-east-1[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-access-point-alias: false[\r][\n]"
+[DEBUG] http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+[DEBUG] http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+[DEBUG] http-outgoing-0 << "[\r][\n]"
+[DEBUG] http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG] http-outgoing-0 << x-amz-id-2: 3Cv1L9oULq+3aqOB2rk+zdhv52T8Q3szyC+zeuSoG4rDMcOLUXODZSfsUwllXww/qi/5Npvx/Uw=
+[DEBUG] http-outgoing-0 << x-amz-request-id: 5HHWWB27XEHTMBA9
+[DEBUG] http-outgoing-0 << Date: Sat, 11 Jun 2022 06:28:17 GMT
+[DEBUG] http-outgoing-0 << x-amz-bucket-region: us-east-1
+[DEBUG] http-outgoing-0 << x-amz-access-point-alias: false
+[DEBUG] http-outgoing-0 << Content-Type: application/xml
+[DEBUG] http-outgoing-0 << Server: AmazonS3
+[DEBUG] Connection can be kept alive for 60000 MILLISECONDS
+[DEBUG] Connection [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443] can be kept alive for 60.0 seconds
+[DEBUG] http-outgoing-0: set socket timeout to 0
+[DEBUG] Connection released: [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] Reported server date (from 'Date' header): Sat, 11 Jun 2022 06:28:17 GMT
+[DEBUG] Received successful response: 200, AWS Request ID: null
+[DEBUG] x-amzn-RequestId: not available
+[DEBUG] AWS Request ID: not available
+[DEBUG] AWS Extended Request ID: 3Cv1L9oULq+3aqOB2rk+zdhv52T8Q3szyC+zeuSoG4rDMcOLUXODZSfsUwllXww/qi/5Npvx/Uw=
+[DEBUG] Found bucket 'repo.jeremywall.dev' Validating permissions
+[DEBUG] Region for repo.jeremywall.dev is us-east-1
+[DEBUG] Sending Request: GET https://repo.jeremywall.dev.s3.amazonaws.com / Parameters: ({"max-keys":["0"],"encoding-type":["url"]}Headers: (amz-sdk-invocation-id: 3e7abbdf-ebfa-c23c-4c69-c92af039e40f, Content-Type: application/octet-stream, User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc., )
+[DEBUG] AWS4 Canonical Request: '"GET
+/
+encoding-type=url&max-keys=0
+amz-sdk-invocation-id:3e7abbdf-ebfa-c23c-4c69-c92af039e40f
+amz-sdk-request:ttl=20220611T062906Z;attempt=1;max=4
+amz-sdk-retry:0/0/500
+content-type:application/octet-stream
+host:repo.jeremywall.dev.s3.amazonaws.com
+user-agent:aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220611T062816Z
+
+amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+[DEBUG] AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20220611T062816Z
+20220611/us-east-1/s3/aws4_request
+21d596c67938247f759a675b1ef7cbeb173edd58f026ffd0cd0e0e40c88e5147"
+[DEBUG] CookieSpec selected: default
+[DEBUG] Auth cache not set in the context
+[DEBUG] Connection request: [route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] Connection leased: [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] http-outgoing-0: set socket timeout to 50000
+[DEBUG] http-outgoing-0: set socket timeout to 50000
+[DEBUG] Executing request GET /?max-keys=0&encoding-type=url HTTP/1.1
+[DEBUG] Proxy auth state: UNCHALLENGED
+[DEBUG] http-outgoing-0 >> GET /?max-keys=0&encoding-type=url HTTP/1.1
+[DEBUG] http-outgoing-0 >> Host: repo.jeremywall.dev.s3.amazonaws.com
+[DEBUG] http-outgoing-0 >> amz-sdk-invocation-id: 3e7abbdf-ebfa-c23c-4c69-c92af039e40f
+[DEBUG] http-outgoing-0 >> amz-sdk-request: ttl=20220611T062906Z;attempt=1;max=4
+[DEBUG] http-outgoing-0 >> amz-sdk-retry: 0/0/500
+[DEBUG] http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=***REDACTED AWS CREDENTIAL***/20220611/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=7b0369b8055a07776ded4b161b7a42633dd7eac5a8a8da63f2d3657232fbb24b
+[DEBUG] http-outgoing-0 >> Content-Type: application/octet-stream
+[DEBUG] http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.
+[DEBUG] http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+[DEBUG] http-outgoing-0 >> X-Amz-Date: 20220611T062816Z
+[DEBUG] http-outgoing-0 >> Content-Length: 0
+[DEBUG] http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG] http-outgoing-0 >> "GET /?max-keys=0&encoding-type=url HTTP/1.1[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Host: repo.jeremywall.dev.s3.amazonaws.com[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-invocation-id: 3e7abbdf-ebfa-c23c-4c69-c92af039e40f[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-request: ttl=20220611T062906Z;attempt=1;max=4[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=***REDACTED AWS CREDENTIAL***/20220611/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=7b0369b8055a07776ded4b161b7a42633dd7eac5a8a8da63f2d3657232fbb24b[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG] http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.[\r][\n]"
+[DEBUG] http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+[DEBUG] http-outgoing-0 >> "X-Amz-Date: 20220611T062816Z[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Content-Length: 0[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] http-outgoing-0 >> "[\r][\n]"
+[DEBUG] http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-id-2: B9iSARqZl4wA7wdwedtMf3uUF+/Y+OxYCE2ezgH1sErlp2+ddkue9rdMEHjmnIv2J2ug9256sFg=[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-request-id: 5HHZ4E63F68FY2R6[\r][\n]"
+[DEBUG] http-outgoing-0 << "Date: Sat, 11 Jun 2022 06:28:17 GMT[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-bucket-region: us-east-1[\r][\n]"
+[DEBUG] http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+[DEBUG] http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+[DEBUG] http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+[DEBUG] http-outgoing-0 << "[\r][\n]"
+[DEBUG] http-outgoing-0 << HTTP/1.1 200 OK
+[DEBUG] http-outgoing-0 << x-amz-id-2: B9iSARqZl4wA7wdwedtMf3uUF+/Y+OxYCE2ezgH1sErlp2+ddkue9rdMEHjmnIv2J2ug9256sFg=
+[DEBUG] http-outgoing-0 << x-amz-request-id: 5HHZ4E63F68FY2R6
+[DEBUG] http-outgoing-0 << Date: Sat, 11 Jun 2022 06:28:17 GMT
+[DEBUG] http-outgoing-0 << x-amz-bucket-region: us-east-1
+[DEBUG] http-outgoing-0 << Content-Type: application/xml
+[DEBUG] http-outgoing-0 << Transfer-Encoding: chunked
+[DEBUG] http-outgoing-0 << Server: AmazonS3
+[DEBUG] Connection can be kept alive for 60000 MILLISECONDS
+[DEBUG] Reported server date (from 'Date' header): Sat, 11 Jun 2022 06:28:17 GMT
+[DEBUG] Sanitizing XML document destined for handler class com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListBucketHandler
+[DEBUG] http-outgoing-0 << "112[\r][\n]"
+[DEBUG] http-outgoing-0 << "<?xml version="1.0" encoding="UTF-8"?>[\n]"
+[DEBUG] http-outgoing-0 << "<ListBucketResult xmlns="http://s3.amazonaws.com/doc/2006-03-01/"><Name>repo.jeremywall.dev</Name><Prefix></Prefix><Marker></Marker><MaxKeys>0</MaxKeys><EncodingType>url</EncodingType><IsTruncated>false</IsTruncated></ListBucketResult>[\r][\n]"
+[DEBUG] http-outgoing-0 << "0[\r][\n]"
+[DEBUG] http-outgoing-0 << "[\r][\n]"
+[DEBUG] Connection [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443] can be kept alive for 60.0 seconds
+[DEBUG] http-outgoing-0: set socket timeout to 0
+[DEBUG] Connection released: [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] Parsing XML response document with handler: class com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListBucketHandler
+[DEBUG] Examining listing for bucket: repo.jeremywall.dev
+[DEBUG] Received successful response: 200, AWS Request ID: 5HHZ4E63F68FY2R6
+[DEBUG] x-amzn-RequestId: not available
+[DEBUG] AWS Request ID: 5HHZ4E63F68FY2R6
+[DEBUG] AWS Extended Request ID: B9iSARqZl4wA7wdwedtMf3uUF+/Y+OxYCE2ezgH1sErlp2+ddkue9rdMEHjmnIv2J2ug9256sFg=
+[INFO] Logged in - repo.jeremywall.dev
+[DEBUG] Region for repo.jeremywall.dev is us-east-1
+[DEBUG] Sending Request: HEAD https://repo.jeremywall.dev.s3.amazonaws.com /release//dev/jeremywall/mavens3demo/demo-library/1/demo-library-1.jar Headers: (amz-sdk-invocation-id: 7a9b167b-b28a-05ae-a291-5366e83f4d66, Content-Type: application/octet-stream, User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc., )
+[DEBUG] AWS4 Canonical Request: '"HEAD
+/release//dev/jeremywall/mavens3demo/demo-library/1/demo-library-1.jar
+
+amz-sdk-invocation-id:7a9b167b-b28a-05ae-a291-5366e83f4d66
+amz-sdk-request:ttl=20220611T062906Z;attempt=1;max=4
+amz-sdk-retry:0/0/500
+content-type:application/octet-stream
+host:repo.jeremywall.dev.s3.amazonaws.com
+user-agent:aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.
+x-amz-content-sha256:UNSIGNED-PAYLOAD
+x-amz-date:20220611T062816Z
+
+amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date
+UNSIGNED-PAYLOAD"
+[DEBUG] AWS4 String to Sign: '"AWS4-HMAC-SHA256
+20220611T062816Z
+20220611/us-east-1/s3/aws4_request
+9ce5727e65ae2856ff0ffb672a56c7f6ad126b6b2f85601095ad09618f00bf0d"
+[DEBUG] CookieSpec selected: default
+[DEBUG] Auth cache not set in the context
+[DEBUG] Connection request: [route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] Connection leased: [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 0; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] http-outgoing-0: set socket timeout to 50000
+[DEBUG] http-outgoing-0: set socket timeout to 50000
+[DEBUG] Executing request HEAD /release/%2Fdev/jeremywall/mavens3demo/demo-library/1/demo-library-1.jar HTTP/1.1
+[DEBUG] Proxy auth state: UNCHALLENGED
+[DEBUG] http-outgoing-0 >> HEAD /release/%2Fdev/jeremywall/mavens3demo/demo-library/1/demo-library-1.jar HTTP/1.1
+[DEBUG] http-outgoing-0 >> Host: repo.jeremywall.dev.s3.amazonaws.com
+[DEBUG] http-outgoing-0 >> amz-sdk-invocation-id: 7a9b167b-b28a-05ae-a291-5366e83f4d66
+[DEBUG] http-outgoing-0 >> amz-sdk-request: ttl=20220611T062906Z;attempt=1;max=4
+[DEBUG] http-outgoing-0 >> amz-sdk-retry: 0/0/500
+[DEBUG] http-outgoing-0 >> Authorization: AWS4-HMAC-SHA256 Credential=***REDACTED AWS CREDENTIAL***/20220611/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=752e599b23158c483720699ee9a9d032f1e51daee6b5a4c54246abf152877f13
+[DEBUG] http-outgoing-0 >> Content-Type: application/octet-stream
+[DEBUG] http-outgoing-0 >> User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.
+[DEBUG] http-outgoing-0 >> x-amz-content-sha256: UNSIGNED-PAYLOAD
+[DEBUG] http-outgoing-0 >> X-Amz-Date: 20220611T062816Z
+[DEBUG] http-outgoing-0 >> Connection: Keep-Alive
+[DEBUG] http-outgoing-0 >> "HEAD /release/%2Fdev/jeremywall/mavens3demo/demo-library/1/demo-library-1.jar HTTP/1.1[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Host: repo.jeremywall.dev.s3.amazonaws.com[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-invocation-id: 7a9b167b-b28a-05ae-a291-5366e83f4d66[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-request: ttl=20220611T062906Z;attempt=1;max=4[\r][\n]"
+[DEBUG] http-outgoing-0 >> "amz-sdk-retry: 0/0/500[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Authorization: AWS4-HMAC-SHA256 Credential=***REDACTED AWS CREDENTIAL***/20220611/us-east-1/s3/aws4_request, SignedHeaders=amz-sdk-invocation-id;amz-sdk-request;amz-sdk-retry;content-type;host;user-agent;x-amz-content-sha256;x-amz-date, Signature=752e599b23158c483720699ee9a9d032f1e51daee6b5a4c54246abf152877f13[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Content-Type: application/octet-stream[\r][\n]"
+[DEBUG] http-outgoing-0 >> "User-Agent: aws-sdk-java/1.11.781 Windows_10/10.0 OpenJDK_64-Bit_Server_VM/25.322-b06 java/1.8.0_322 vendor/Amazon.com_Inc.[\r][\n]"
+[DEBUG] http-outgoing-0 >> "x-amz-content-sha256: UNSIGNED-PAYLOAD[\r][\n]"
+[DEBUG] http-outgoing-0 >> "X-Amz-Date: 20220611T062816Z[\r][\n]"
+[DEBUG] http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+[DEBUG] http-outgoing-0 >> "[\r][\n]"
+[DEBUG] http-outgoing-0 << "HTTP/1.1 404 Not Found[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-request-id: 5HHQ60BYMC6XQ96P[\r][\n]"
+[DEBUG] http-outgoing-0 << "x-amz-id-2: OxYu6SH7H1cp07Z5GXiWyt6g8ebivw3W4CLJ+GvMkTWa9G+TJkT11ep5ZWJkrI2bxXZfr4nx6WI=[\r][\n]"
+[DEBUG] http-outgoing-0 << "Content-Type: application/xml[\r][\n]"
+[DEBUG] http-outgoing-0 << "Date: Sat, 11 Jun 2022 06:28:16 GMT[\r][\n]"
+[DEBUG] http-outgoing-0 << "Server: AmazonS3[\r][\n]"
+[DEBUG] http-outgoing-0 << "[\r][\n]"
+[DEBUG] http-outgoing-0 << HTTP/1.1 404 Not Found
+[DEBUG] http-outgoing-0 << x-amz-request-id: 5HHQ60BYMC6XQ96P
+[DEBUG] http-outgoing-0 << x-amz-id-2: OxYu6SH7H1cp07Z5GXiWyt6g8ebivw3W4CLJ+GvMkTWa9G+TJkT11ep5ZWJkrI2bxXZfr4nx6WI=
+[DEBUG] http-outgoing-0 << Content-Type: application/xml
+[DEBUG] http-outgoing-0 << Date: Sat, 11 Jun 2022 06:28:16 GMT
+[DEBUG] http-outgoing-0 << Server: AmazonS3
+[DEBUG] Connection can be kept alive for 60000 MILLISECONDS
+[DEBUG] Connection [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443] can be kept alive for 60.0 seconds
+[DEBUG] http-outgoing-0: set socket timeout to 0
+[DEBUG] Connection released: [id: 0][route: {s}->https://repo.jeremywall.dev.s3.amazonaws.com:443][total kept alive: 1; route allocated: 1 of 50; total allocated: 1 of 50]
+[DEBUG] Reported server date (from 'Date' header): Sat, 11 Jun 2022 06:28:16 GMT
+[DEBUG] Received error response: com.amazonaws.services.s3.model.AmazonS3Exception: Not Found (Service: Amazon S3; Status Code: 404; Error Code: 404 Not Found; Request ID: 5HHQ60BYMC6XQ96P; S3 Extended Request ID: OxYu6SH7H1cp07Z5GXiWyt6g8ebivw3W4CLJ+GvMkTWa9G+TJkT11ep5ZWJkrI2bxXZfr4nx6WI=; Proxy: null), S3 Extended Request ID: OxYu6SH7H1cp07Z5GXiWyt6g8ebivw3W4CLJ+GvMkTWa9G+TJkT11ep5ZWJkrI2bxXZfr4nx6WI=
+[INFO] Logged off - repo.jeremywall.dev
+[INFO] dev.jeremywall.mavens3demo:demo-library:jar:1 does not exist
+[INFO]
